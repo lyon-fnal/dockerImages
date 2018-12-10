@@ -68,6 +68,9 @@ RUN find $HOME/ -name '*.sh' -exec chmod $verbose a+x {} + && \
     find $HOME/ -name '*.desktop' -exec chmod $verbose a+x {} + && \
     chgrp -R 0 $HOME && chmod -R $verbose a+rw $HOME && find $HOME -type d -exec chmod $verbose a+x {} +
 
+ADD wm_startup.sh $HOME/
+RUN chmod a+x $HOME/wm_startup.sh
+
 USER 1000
 
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh"]
