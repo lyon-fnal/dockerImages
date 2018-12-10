@@ -20,6 +20,14 @@ Add `-h` at the end to see all the options.
 
 You can remove `-p 6901:6901` if you do not need no-vnc. You can remove `-p 5901:5901` if you only want no-vnc. 
 
+You can also add `bash` to the end of the command line, like
+
+```bash
+docker run -e VNC_PW=your_password -it --rm -p 6901:6901 -p 5901:5901 vnc-ubuntu bash
+```
+
+and that will run a bash shell in your non-graphical terminal window with the VNC server running in the background. You can pop graphics programs from that non-graphical terminal and they will show up in the VNC viewer. 
+
 ## Viewing
 
 The startup script will report connection information. The IP address will be incorrect. Just replace it with `localhost`. 
