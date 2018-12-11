@@ -1,5 +1,7 @@
 # Microsoft Q-Sharp and Visual Studio Code in VNC and Ubuntu
 
+The Microsoft QSharp language is installed as well as the VSCode extension.
+
 Based on `vscode-ubuntu` image (Dockerfile is in this repository). 
 
 Run with,

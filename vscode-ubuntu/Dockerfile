@@ -1,3 +1,5 @@
+#  Adds Microsoft Visual Studio Code to vnc-ubuntu
+#
 # docker build -t vscode-ubuntu .
 #
 #  Note, VSCode won't run on RHEL6 - it needs RHEL7

@@ -9,10 +9,10 @@ Based on https://github.com/ConSol/docker-headless-vnc-container
 The easy way to run with all features is,
 
 ```bash
-docker run -e VNC_PW=your_password -it --rm -p 6901:6901 -p 5901:5901 vnc-ubuntu
+docker run -e VNC_PW=your_password -it --rm -p 6901:6901 -p 5901:5901 -v $PWD:/work vnc-ubuntu
 ```
 
-Replace `your_password` with the VNC password you want to use. 
+Replace `your_password` with the VNC password you want to use. Start the container in the directory you want to have access to as `/work`. You can also give an explicit path instead of `$PWD`. 
 
 The command will not return. You can quit the server with Ctrl-C. 
 
