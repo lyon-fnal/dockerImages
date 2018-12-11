@@ -5,7 +5,7 @@
 
 FROM lyonfnal/vscode-ubuntu
 
-LABEL maintainer="SvenDowideit@home.org.au"
+LABEL maintainer="lyon@fnal.gov"
 
 USER 0
 
