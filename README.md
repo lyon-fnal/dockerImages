@@ -9,6 +9,8 @@ There are lots of quantum computing tools out there. I'm trying to collect them 
 There are a chain of images. The dependency moves to the right. 
 
 ```
+(Prepend everything with lyonfnal/)
+
 vnc-ubuntu --> vscode-ubuntu --> jupyter-ubuntu --> qc-python-ubuntu
                               \--> qsharp-vscode-ubuntu
 ```

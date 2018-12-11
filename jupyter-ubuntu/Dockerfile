@@ -1,9 +1,11 @@
 # jupyter-ubuntu
 # Adds Anaconda and Jupyter to vscode-ubuntu
 
-# docker build -t jupyter-ubuntu .
+# docker build -t lyonfnal/jupyter-ubuntu .
 
-FROM vscode-ubuntu
+FROM lyonfnal/vscode-ubuntu
+
+LABEL maintainer="SvenDowideit@home.org.au"
 
 USER 0
 

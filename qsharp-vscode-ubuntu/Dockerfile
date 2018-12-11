@@ -1,7 +1,9 @@
 # Adds Microsoft QSharp to vscode-ubuntu
 
-# docker build -t qsharp-vscode-ubuntu .
-FROM vscode-ubuntu
+# docker build -t lyonfnal/qsharp-vscode-ubuntu .
+FROM lyonfnal/vscode-ubuntu
+
+LABEL maintainer="lyon@fnal.gov"
 
 USER 0
 

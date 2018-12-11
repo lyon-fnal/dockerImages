@@ -3,9 +3,11 @@
 
 # docker build -t vnc-ubuntu .
 
-# Based on Simon Hofmann "simon.hofmann@consol.de" 
+# Based on work by Simon Hofmann "simon.hofmann@consol.de" (thanks!)
 
 FROM ubuntu:latest
+
+LABEL maintainer="lyon@fnal.gov"
 
 ## Connection ports for controlling the UI:
 # VNC port:5901

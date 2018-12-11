@@ -5,7 +5,7 @@ This image adds Anaconda3 Python and Jupyter (notebook and lab) to `vscode-ubunt
 If you want to run a Jupyter Lab server, do
 
 ```bash
-docker run -it --rm -p 8888:8888 -v $PWD:/work jupyter-ubuntu
+docker run -it --rm -p 8888:8888 -v $PWD:/work lyonfnal/jupyter-ubuntu
 ```
 
 Jupyter will serve `/work`. 
@@ -14,7 +14,7 @@ Note that the VNC server will not run. If you want to run the VNC server, then a
 
 ```bash
 # Run VNC and start jupyter later
-docker run -it --rm -e VNC_PW=your_password -p 8888:8888 -p 5901:5901 -p 6901:6901 -v $PWD:/work jupyter-ubuntu --wait
+docker run -it --rm -e VNC_PW=your_password -p 8888:8888 -p 5901:5901 -p 6901:6901 -v $PWD:/work lyonfnal/jupyter-ubuntu --wait
 ```
 
 You can start Visual Studio Code with `code` from a terminal. 

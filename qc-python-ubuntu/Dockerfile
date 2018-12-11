@@ -2,9 +2,11 @@
 #
 #  Adds Qutip, ProjectQ, CirQ, QISKit (and LaTeX too)
 #
-# docker build -t qc-python-ubuntu .
+# docker build -t lyonfnal/qc-python-ubuntu .
 
-FROM jupyter-ubuntu
+FROM lyonfnal/jupyter-ubuntu
+
+LABEL maintainer="lyon@fnal.gov"
 
 # Install LaTeX
 USER 0

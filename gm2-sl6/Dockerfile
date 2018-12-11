@@ -1,7 +1,7 @@
-# docker build -t gm2:sl6 -f gm2-sl6.dockerfile .
+# docker build -t lyonfnal/gm2:sl6 .
 
 FROM sl:6
-MAINTAINER Adam Lyon <lyon@fnal.gov>
+LABEL maintainer="lyon@fnal.gov"
 
 # docker tag 1213 imageregistry.fnal.gov/egp/interactive-sl6:1.0
 

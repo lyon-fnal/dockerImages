@@ -1,12 +1,12 @@
 #  Adds Microsoft Visual Studio Code to vnc-ubuntu
 #
-# docker build -t vscode-ubuntu .
+# docker build -t lyonfnal/vscode-ubuntu .
 #
 #  Note, VSCode won't run on RHEL6 - it needs RHEL7
 #
-FROM vnc-ubuntu
+FROM lyonfnal/vnc-ubuntu
 
-MAINTAINER Adam Lyon
+MAINTAINER Adam Lyon lyon@fnal.gov
 
 USER 0
 
