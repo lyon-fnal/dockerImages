@@ -11,3 +11,11 @@ cd ..
 cd qsharp-vscode-ubuntu
 docker build -t qsharp-vscode-ubuntu .
 cd ..
+
+cd jupyter-ubuntu
+docker build -t jupyter-ubuntu .
+cd ..
+
+cd qc-python-ubuntu
+docker build -t qc-python-ubuntu .
+cd ..
