@@ -42,7 +42,7 @@ RUN . /headless/anaconda3/etc/profile.d/conda.sh && \
     jupyter-nbextension enable rise --py --sys-prefix && \
     jupyter notebook --generate-config && \
     echo "" >> ~/.jupyter/jupyter_notebook_config.py && \
-    echo "Control URL that is printed at start" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "#Control URL that is printed at start" >> ~/.jupyter/jupyter_notebook_config.py && \
     echo "c.NotebookApp.custom_display_url = 'http://127.0.0.1:8888'" >> ~/.jupyter/jupyter_notebook_config.py
 
 
