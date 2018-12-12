@@ -7,6 +7,8 @@ Note that you do not need to clone this (`lyon-fnal/dockerImages`) repository.
 ## Installation
 First, you need to install Docker on your laptop. See https://www.docker.com/products/docker-desktop for Mac and Windows installations (most of you should follow those instructions). For more information and installation on a Linux laptop, see https://docs.docker.com/install/ (expand the Linux heading on the left side contents bar). There are installations instructions for many Linux platforms. 
 
+Note that you may want to check the Docker preferences and set the number of CPUs and memory accordingly. I have a 6 core laptop with 32 GB of memory and I give Docker 6 CPUs and 16 GB of memory. 
+
 With Docker installed and running, pull the `lyonfnal/qc-python-ubuntu` image with (from a terminal window on your laptop),
 
 ```bash
