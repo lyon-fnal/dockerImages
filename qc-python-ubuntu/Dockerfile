@@ -33,6 +33,16 @@ RUN . /headless/anaconda3/etc/profile.d/conda.sh && \
     conda activate base && \
     pip install qiskit qiskit-aqua qiskit-aqua-chemistry
 
+# Need poppler for QISKit
+USER 0
+RUN apt-get install -y poppler-utils
+# We need an updated latex package qcircuit -- UGH!
+RUN wget http://mirrors.ctan.org/graphics/qcircuit/qcircuit.sty && \
+    mv qcircuit.sty /usr/share/texlive/texmf-dist/tex/latex/qcircuit && \
+    texhash 
+USER 1000
+
+
 ## Won't do Forrest (Rigetti) because you have to request the download
 
 # Add nice extensions to VSCode
