@@ -4,6 +4,8 @@ This is my repository for my docker image sources.
 
 ## Quantum Computing Tools
 
+See [here](tutorial.md) for installation instructions for the Fermilab Quantum Computing tutorials. 
+
 There are lots of quantum computing tools out there. I'm trying to collect them all in one gigantic image.  Fun!
 
 There are a chain of images. The dependency moves to the right. 
