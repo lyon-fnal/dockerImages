@@ -10,7 +10,7 @@ LABEL maintainer="lyon@fnal.gov"
 
 # Install LaTeX
 USER 0
-RUN apt-get install -y texlive-latex-base build-essential python3-tk latexmk
+RUN apt-get install -y texlive-latex-extra build-essential python3-tk latexmk
 USER 1000
 
 # Install Qutip
