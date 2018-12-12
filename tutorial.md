@@ -20,7 +20,7 @@ You can check that you have it with
 ```bash
 docker images
 ```
-Finally, you should create a directory somewhere on your laptop fr your Quantum Computing work. You should also pull the git repository for the tutorials. That is, 
+Finally, you should create a directory somewhere on your laptop for your Quantum Computing work. You should also pull the git repository for the tutorials. That is, 
 
 ```bash
 mkdir somewhere/MyQuantumComputingStuff
@@ -47,7 +47,7 @@ Jupyter Lab will start up and you'll see something like
 
 ```
 Copy/paste this URL into your browser when you connect for the first time,
-    to login with a token:
+to login with a token:
         http://(82dd5a3e461a or 127.0.0.1):8888/?token=45efb72b443e64315953047f7f6605b10cf49103fe1ae2d2
 ```
 
