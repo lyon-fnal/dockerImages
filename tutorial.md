@@ -69,15 +69,9 @@ Jupyter Lab will start up and you'll see something like
 ```
 Copy/paste this URL into your browser when you connect for the first time,
 to login with a token:
-        http://(82dd5a3e461a or 127.0.0.1):8888/?token=45efb72b443e64315953047f7f6605b10cf49103fe1ae2d2
+        http://127.0.0.1:8888/token=45efb72b443e64315953047f7f6605b10cf49103fe1ae2d2
 ```
 
-Your token will be different. To access Jupyter Lab, use your laptop's browser to access
-
-```
-http://localhost:8888/?token=...
-```
-
-Where the `...` is the token from the message (cut and paste it). 
+Your token will be different. To access Jupyter Lab, use your laptop's browser and copy and paste that URL.
 
 If you want to do something special, like run VNC and use Microsoft Visual Studio Code, you should see [here](qc-python-ubuntu/README.md).
