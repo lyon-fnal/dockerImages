@@ -69,11 +69,14 @@ RUN useradd -u $MYUID -g $MYGID -ms /bin/bash $USERNAME && \
       echo "$USERNAME ALL=(ALL)   NOPASSWD:ALL" >> /etc/sudoers
 
 USER $USERNAME
-WORKDIR /home/$USERNAME
 
 USER root
-RUN mkdir /pnfs && mkdir /cvmfs && mkdir /gm2
+RUN mkdir /pnfs && mkdir /cvmfs && mkdir /gm2 && mkdir /work
+RUN chown $USERNAME /work
 USER $USERNAME
 
 # For gdbserver
 EXPOSE 9091
+
+WORKDIR /work
+ENTRYPOINT [ "bash" ]
