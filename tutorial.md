@@ -1,6 +1,6 @@
 # Instructions for the Fermilab Quantum Computing Tutorials
 
-You can run the Jupyter Notebooks and your own stuff locally in a Docker container. This is the most reliable way to run, especially if you have a descent laptop.
+You can run the Jupyter Notebooks and your own stuff locally in a Docker container. This is the most reliable way to run, especially if you have a decent laptop.
 
 Note that you do not need to clone this (`lyon-fnal/dockerImages`) repository.
 
